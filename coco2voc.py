@@ -70,7 +70,6 @@ def coco2voc(anno,xml_dir):
 
 
         xml_path = os.path.join(xml_dir,file_name.split('.')[-2] + '.xml')
-        print(xml_path)
 
         with open(xml_path, 'w+',encoding="utf8") as f:
             f.write('\n'.join(xml_content))
